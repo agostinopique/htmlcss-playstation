@@ -1,0 +1,51 @@
+/* DEBUG */
+
+.debug {
+    background-color: #0070D1;
+    border: 1px solid red;
+}
+
+.h70 {
+    height: 70px;
+}
+.h100 {
+    height: 100px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+/* /DEBUG */
+
+/* HEADER */
+.sony {
+    height: 30px;
+}
+/* /HEADER */
+
+/* JUMBOTRON */
+
+.jumbotron {
+    height: 400px;
+    background-color: lightgrey;
+}
+
+/* /JUMBOTRON */
+
+/* MAIN */
+
+.takes_2 {
+    height: 400px;
+}
+
+.social_i {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    margin: 10px;
+}
+/* /MAIN */
+
+/* FOOTER */
+/* /FOOTER */
