@@ -1,0 +1,40 @@
+
+/* HEADER */
+
+.sony {
+    background-color: black;
+}
+
+.sony img{
+    width: 8%;
+}
+
+.ap_button.head_btn {
+    margin-right: 10px;
+}
+/* /HEADER */
+
+/* JUMBOTRON */
+
+.jumbotron {
+    background-image: url(./img/jumbo-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* /JUMBOTRON */
+
+/* MAIN */
+
+.game_cards img{
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px #1476CF;
+}
+
+.sovra-titolo {
+    
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+/* /MAIN */

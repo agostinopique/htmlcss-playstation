@@ -27,10 +27,12 @@
 /* JUMBOTRON */
 
 .jumbotron {
-    height: 400px;
-    background-color: lightgrey;
+    height: 500px;
 }
 
+.box {
+    width: 40%;
+}
 /* /JUMBOTRON */
 
 /* MAIN */
