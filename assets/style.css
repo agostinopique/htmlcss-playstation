@@ -1,6 +1,7 @@
 
 /* HEADER */
 
+
 .sony {
     background-color: black;
 }
@@ -9,9 +10,58 @@
     width: 8%;
 }
 
-.ap_button.head_btn {
-    margin-right: 10px;
+header nav ul { 
+    margin: 0;
+    padding: 0;
 }
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header nav {
+    height: 60px;
+}
+
+nav .search_lens {
+    width: 30px;
+}
+
+header nav ul li .ap_button {
+    background-color: #363636;
+}
+
+.drop_down_toggle img{
+    margin-left: 3px;
+    width: 12px;
+}
+.chevron_up {
+    display: none;
+
+}
+
+.drop_down_toggle a:focus .chevron_up {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.drop_down_toggle a:focus .chevron_down {
+    display: none;
+}
+.dropdown_burger {
+    margin-right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown_burger i {
+    font-size: 25px;
+    color: #737373;
+    padding: 8px 15px;
+}
+
 /* /HEADER */
 
 /* JUMBOTRON */
@@ -28,6 +78,11 @@
 .ps5_accessories{
     border-bottom: 2px solid rgba(255, 255, 255, 0);
     opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+.ps5_accessories:hover {
+    opacity: 1;
 }
 
 .ps5_accessories.active {
@@ -36,7 +91,7 @@
 }
 
 .game_cards {
-    padding: 5px;
+    padding: 10px;
 }
 
 .game_cards.active img{
@@ -135,4 +190,42 @@ footer ul li {
         width: 75%;
     }
 }
+
+@media screen and (max-width: 890px) {
+    nav ul.left_nav,
+    nav ul.right_nav {
+        display: none !important;
+    }
+    .dropdown_burger {
+        display: inline-block;
+    }
+}
 /* /MEDIA */
+
+/* CARD HOVER */
+
+/* 
+ANIMAZIONE ALTERNATIVA
+
+.game_cards:hover {
+    animation-name: rise;
+    position: relative;
+    animation-duration: 0.5s;
+}
+
+@keyframes rise {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 10px;
+    }
+} */
+.game_cards {
+    transition: transform 0.6s;
+}
+.game_cards:hover {
+    transform: translateY(-15px);
+}
+/* /CARD HOVER */
+
