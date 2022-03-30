@@ -38,8 +38,13 @@
 /* MAIN */
 
 .takes_2 {
-    height: 400px;
+    height: 500px;
 }
+
+.takes_2 .box {
+    width: 40%;
+}
+
 
 .social_i {
     width: 80px;

@@ -25,16 +25,47 @@
 /* /JUMBOTRON */
 
 /* MAIN */
+.ps5_accessories{
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
 
-.game_cards img{
+.ps5_accessories.active {
+    border-bottom: 2px solid #0067CE; 
+}
+
+
+.game_cards img,
+.new_entries img{
     border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 0 0 10px #1476CF;
 }
 
 .sovra-titolo {
-    
     margin-bottom: 3px;
     font-size: 14px;
+}
+
+.takes_2 {
+    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.takes_2 .box {
+    max-height: 100%;
+}
+.new_entries {
+    background-color: #1F1F1F;
+}
+
+.new_entries .col p{
+    font-size: 13px;
+}
+
+.ps_plus {
+    background-color: #BDBCBB;
+}
+
+.ps_plus .box > img{
+    width: 45%;
 }
 /* /MAIN */
