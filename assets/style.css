@@ -27,10 +27,22 @@
 /* MAIN */
 .ps5_accessories{
     border-bottom: 2px solid rgba(255, 255, 255, 0);
+    opacity: 0.6;
 }
 
 .ps5_accessories.active {
-    border-bottom: 2px solid #0067CE; 
+    border-bottom: 2px solid #0067CE;
+    opacity: 1;
+}
+
+.game_cards {
+    padding: 5px;
+}
+
+.game_cards.active img{
+    border-radius: 10px;
+    outline: 2px solid #0060CA;
+    outline-offset: 2px;
 }
 
 
@@ -53,6 +65,7 @@
 .takes_2 .box {
     max-height: 100%;
 }
+
 .new_entries {
     background-color: #1F1F1F;
 }
@@ -68,4 +81,58 @@
 .ps_plus .box > img{
     width: 45%;
 }
+
+.ps_4 .col,
+.ps_store .col {
+    padding: 10px;
+}
+
+.ps_now {
+    background-color: #171C3B;
+}
 /* /MAIN */
+
+/* FOOTER */
+
+.language-globe {
+    width: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+.foot_copy {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.foot_copy a {
+    text-decoration: underline;
+}
+/* /FOOTER */
+
+/* MEDIA */
+
+@media screen and (max-width: 809px) {
+    .ps_now_image, 
+    .ps_plus_image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .jumbotron .box img {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .jumbotron .box img {
+        width: 75%;
+    }
+}
+/* /MEDIA */

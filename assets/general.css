@@ -12,6 +12,13 @@ header {
     border-bottom: 1px solid black;
 }
 
+footer {
+    background-color: #01439C;
+}
+
+a {
+    text-decoration: none;
+}
 
 .ap_button {
     padding: 10px 15px;
@@ -24,7 +31,27 @@ header {
     background-color: #CD3D10;
 }
 
-.ap_button.ap_white {
+.ap_button.ps_now_btn,
+.ap_button.ps_plus_btn {
     background-color: #D9DADC;
-    color: #0058E6;
+}
+
+.ap_button:hover{
+    outline: 2px solid white;
+    outline-offset: -5px;
+}
+
+.ap_button.ap_acquista:hover {
+    outline: 2px solid black;
+    outline-offset: -5px;
+}
+
+.ap_button.ps_now_btn:hover {
+    outline: 2px solid black;
+    outline-offset: -5px;
+}
+
+.ap_button.ps_plus_btn:hover {
+    outline: 2px solid #C6C5C5;
+    outline-offset: -2px;
 }

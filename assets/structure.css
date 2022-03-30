@@ -45,11 +45,17 @@
     width: 40%;
 }
 
+.social_icons {
+    margin: 75px 0;
+}
+
+.social_icons h2 {
+    margin-bottom: 30px;
+}
 
 .social_i {
     width: 80px;
     height: 80px;
-    border: 1px solid black;
     margin: 10px;
 }
 /* /MAIN */
