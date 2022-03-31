@@ -6,6 +6,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 
 .sony {
@@ -64,6 +65,7 @@ header nav ul li .ap_button {
 .drop_down_toggle a:focus .chevron_down {
     display: none;
 }
+
 .dropdown_burger {
     margin-right: 20px;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -76,6 +78,7 @@ header nav ul li .ap_button {
     color: #737373;
     padding: 8px 15px;
 }
+
 
 /* DROP DOWN SECTION */
 
@@ -92,14 +95,40 @@ header nav ul li .ap_button {
     box-shadow: 0px 0px 13px #0070D1;
 }
 
-.drop_down_container {
-    background-color: #fff;
+.drop_down_container,
+.dropdown_burger_menu{
     display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
 }
 
-.drop_down_toggle:focus .drop_down_container{
+.items_container {
+    width: 25%;
+    display: none;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.drop_down_toggle:focus-within  .drop_down_container,
+.drop_down_toggle:focus-within  .items_container
+{
     display: block;
 }
+
+
+.dropdown_burger_menu {
+    display: none;
+    background-color: #ffffff;
+}
+
+.dropdown_burger:focus-within .dropdown_burger_menu{
+    display: block;
+}
+
 /* /DROP DOWN SECTION */
 
 /* /HEADER */
