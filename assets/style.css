@@ -214,12 +214,6 @@ footer ul li {
 
 /* MEDIA */
 
-@media screen and (max-width: 768px) {
-    .ps_now, 
-    .ps_plus {
-        /* justify-content: center; */
-    }
-}
 
 @media screen and (min-width: 992px) {
     .jumbotron .box img,
