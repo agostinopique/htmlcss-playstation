@@ -1,6 +1,12 @@
 
 /* HEADER */
 
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 .sony {
     background-color: black;
@@ -22,6 +28,7 @@ header nav ul li {
 
 header nav {
     height: 60px;
+    background-color: #fff;
 }
 
 nav .search_lens {
@@ -36,9 +43,17 @@ header nav ul li .ap_button {
     margin-left: 3px;
     width: 12px;
 }
+
 .chevron_up {
     display: none;
+}
 
+.drop_down_toggle a {
+    color: black;
+}
+
+.drop_down_toggle:hover a {
+    color: #0070D1;
 }
 
 .drop_down_toggle a:focus .chevron_up {
@@ -62,6 +77,31 @@ header nav ul li .ap_button {
     padding: 8px 15px;
 }
 
+/* DROP DOWN SECTION */
+
+.drop_down_container ul {
+    list-style: none;
+}
+
+.drop_down_container ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.drop_icon:hover img{
+    box-shadow: 0px 0px 13px #0070D1;
+}
+
+.drop_down_container {
+    background-color: #fff;
+    display: none;
+}
+
+.drop_down_toggle:focus .drop_down_container{
+    display: block;
+}
+/* /DROP DOWN SECTION */
+
 /* /HEADER */
 
 /* JUMBOTRON */
@@ -70,6 +110,7 @@ header nav ul li .ap_button {
     background-image: url(./img/jumbo-bg.png);
     background-position: center;
     background-size: cover;
+    margin-top: 90px;
 }
 
 /* /JUMBOTRON */
@@ -173,20 +214,22 @@ footer ul li {
 
 /* MEDIA */
 
-@media screen and (max-width: 809px) {
-    .ps_now_image, 
-    .ps_plus_image {
-        display: none;
+@media screen and (max-width: 768px) {
+    .ps_now, 
+    .ps_plus {
+        /* justify-content: center; */
     }
 }
 
 @media screen and (min-width: 992px) {
-    .jumbotron .box img {
+    .jumbotron .box img,
+    .takes_2 .box img{
         width: 50%;
     }
 }
 @media screen and (max-width: 992px) {
-    .jumbotron .box img {
+    .jumbotron .box img,
+    .takes_2 .box img {
         width: 75%;
     }
 }

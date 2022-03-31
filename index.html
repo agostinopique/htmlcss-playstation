@@ -68,10 +68,11 @@
                     </a>
                 </li>
             </ul>
+            
             <!-- /LEFT NAV -->
 
             <!-- RIGHT NAV -->
-            <ul class="right_nav d-flex align-items-baseline justify-content-end">
+            <ul class="right_nav d-flex align-items-baseline justify-content-end pe-1">
                 <li class="drop_down_toggle">
                     <a href="#">My PlayStation
                         <img class="chevron_down" src="./assets/img/chevron-down-solid.svg" alt="chevron drop down">
@@ -96,6 +97,54 @@
             </div>
         </nav>
         <!-- /HEADER NAVIGATOR -->
+
+        <!-- DROPDOWN SECTION -->
+        <div class="drop_down_container p-3">
+            <ul class="drop_down_menu d-flex justify-content-center">
+                <li>
+                    <a class="drop_icon" href="#">
+                        <img src="./assets/img/play-menu-ico.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="drop_icon" href="#">
+                        <img src="./assets/img/play-menu-ico.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="drop_icon" href="#">
+                        <img src="./assets/img/play-menu-ico.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <ul class="d-flex justify-content-center">
+                <li>
+                    <a href="#">PS3</a>
+                </li>
+                <li>
+                    <a href="#">PS4</a>
+                </li>
+                <li>
+                    <a href="#">PS5</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="dropdown_burger">
+            <ul>
+                <li>Giochi</li>
+                <li>Hardware</li>
+                <li>Servizi</li>
+                <li>Novità</li>
+                <li>Fai acquisti</li>
+                <li>Supporto</li>
+                <li>My PlayStation</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div> -->
+        <!-- DROPDOWN SECTION -->
 
     </header>
 
@@ -193,9 +242,9 @@
         </div>
 
         <!-- IT TAKES 2 -->
-        <section class="takes_2 d-flex align-items-end px-2">
-            <div class="box w-50 text-light mb-5 ms-3">
-                <img class="w-50 my-2" src="./assets/img/it-takes-two-logo.png" alt="">
+        <section class="takes_2 d-flex px-2">
+            <div class="box container w-50 text-light mb-5 ms-3">
+                <img class="my-2" src="./assets/img/it-takes-two-logo.png" alt="">
                 <h2>Un'avventura cooperativa selvaggia ti attende</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore animi accusamus exercitationem odio quo assumenda, est minima voluptas tenetur.</p>
                 <a href="#" class="ap_button ap_acquista text-light">Acquista ora</a>
@@ -295,14 +344,14 @@
         <!-- PLAYSTATION PLUS -->
         <section class="my-2">
             <!-- PS PLUS BANNER -->
-            <div class="ps_plus d-flex justify-content-between align-items-center">
-                <div class="box w-50 m-4">   
+            <div class="ps_plus d-flex justify-content-around align-items-center">
+                <div class="box w-50 ms-4 pb-3">   
                     <img class="my-3" src="./assets/img/ps-plus-logo.png" alt="PS Plus logo">
                     <p class="my-3">Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi mensili, sconti esclusivi e molto altro.</p>
                     <a href="#" class="ap_button ps_plus_btn text-primary">Esplora PlayStation Plus</a>
                 </div>
-                <div class="-50 pe-5 ps_plus_image">
-                    <img class="w-100" src="./assets/img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
+                <div class="w-50 pe-5 d-none d-md-block ps_plus_image">
+                    <img class=" w-100" src="./assets/img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
                 </div>
             </div>
             <!-- /PS PLUS BANNER -->
@@ -331,13 +380,13 @@
         <!-- /PLAYSTATION PLUS -->
 
         <!-- PS NOW -->
-        <section class="ps_now d-flex justify-content-between align-items-center my-2">
-                <div class="box w-50 m-4">   
+        <section class="ps_now d-flex justify-content-around align-items-center">
+                <div class="box w-50 ms-4 pb-3">   
                     <img class="my-3 w-50" src="./assets/img/ps-now-logo-two-column.png" alt="PS Plus logo">
                     <p class="mt-3 mb-4 text-light">Ottieni l'accesso immediaro a una vastissima raccola di oltre 800 giochi per PS4, PS3 e PS2 su PS4 o PC Windows, con nuovi titoli aggiunti ogni mese. </p>
                     <a href="#" class="ap_button ps_now_btn text-dark">Esplora PlayStation Now</a>
                 </div>
-            <div class="w-50 px-5 ps_now_image">
+            <div class="w-50 pe-5 d-none d-md-block ps_now_image">
                 <img class="w-100" src="./assets/img/ps-now-april-featured-image-block.png" alt="ps-now">
             </div>
         </section>

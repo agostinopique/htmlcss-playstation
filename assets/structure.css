@@ -30,6 +30,11 @@
     height: 500px;
 }
 
+.jumbotron .box {
+    margin-top: 120px;
+
+}
+
 .box {
     width: 40%;
 }
@@ -37,9 +42,6 @@
 
 /* MAIN */
 
-.takes_2 {
-    height: 500px;
-}
 
 .takes_2 .box {
     width: 40%;
